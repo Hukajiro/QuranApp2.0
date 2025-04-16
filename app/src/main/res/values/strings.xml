@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QuranApp2.0</string>
+    <string name="baca_quran">BACA QUR\'AN</string>
+    <string name="terakhir_baca">TERAKHIR BACA</string>
+    <string name="setting_tema">Setting Tema Terang/Gelap</string>
+    <string name="surah">SURAH</string>
+    <string name="juz">JUZ</string>
+    <string name="bookmark">BOOKMARK</string>
+    <string name="al_quran_indonesia">Al-Qur\'an Indonesia</string>
+    <string name="recycler_view_ayat_description">Daftar Ayat Al-Qur\'an</string>
+</resources>
