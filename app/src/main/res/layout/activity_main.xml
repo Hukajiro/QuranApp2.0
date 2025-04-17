@@ -1,53 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/settingTema"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="@string/setting_tema"
-        android:textColor="@android:color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/logo"
-        app:layout_constraintTop_toBottomOf="@id/settingTema"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo" />
 
     <Button
-        android:id="@+id/bacaQuranButton"
+        android:id="@+id/btn_baca_quran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
         android:layout_margin="16dp"
-        android:text="@string/baca_quran"
-        android:textColor="@android:color/black"
-        android:background="@android:color/transparent"
-        android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="16dp"
+        android:text="BACA QURAN" />
 
     <Button
-        android:id="@+id/terakhirBacaButton"
+        android:id="@+id/btn_terakhir_baca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/btn_baca_quran"
         android:layout_margin="16dp"
-        android:text="@string/terakhir_baca"
-        android:textColor="@android:color/black"
-        android:background="@android:color/transparent"
-        android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/bacaQuranButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="TERAKHIR BACA" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

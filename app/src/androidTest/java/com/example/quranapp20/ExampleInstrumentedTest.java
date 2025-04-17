@@ -1,4 +1,4 @@
-package com.example.quranapp;
+package com.example.quranapp20;
 
 import android.content.Context;
 
